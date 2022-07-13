@@ -888,7 +888,7 @@ local function IsCidFelon(sentCid, cb)
 			for p=1, #PenalCode do
 				for x=1, #PenalCode[p] do
 					if PenalCode[p][x]['title'] == Charges[i] then
-						if PenalCode[p][x]['class'] == 'Felony' then
+						if PenalCode[p][x]['class'] == 'Crime' then
 							cb(true)
 							return
 						end
